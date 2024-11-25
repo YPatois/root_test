@@ -11,7 +11,7 @@ include(${ROOT_USE_FILE})
 
 
 FILE(GLOB SRCFILES *.cxx)
-FILE(GLOB HFILES *.h)
+FILE(GLOB HFILES TT*.h)
 
 # That line is needed for obscure ROOT reasons (but shouldn't)
 SET (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
