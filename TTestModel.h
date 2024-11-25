@@ -7,6 +7,10 @@
 #include <fstream>
 #include <iostream>
 
+
+#ifndef Test_TTMTestModel
+#define Test_TTMTestModel
+
 class TTMTestModel:public TObject {
 
  public:
@@ -21,3 +25,4 @@ class TTMTestModel:public TObject {
    ClassDef(TTMTestModel,1) // Base class for Test model objects
 
 };
+#endif
