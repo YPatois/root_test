@@ -17,5 +17,3 @@ class TTMTestFit:public TObject {
   ClassDef(TTMTestFit,1) // Base class for Test fit objects
 
 };
-
-#endif

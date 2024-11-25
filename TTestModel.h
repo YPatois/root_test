@@ -21,5 +21,3 @@ class TTMTestModel:public TObject {
    ClassDef(TTMTestModel,1) // Base class for Test model objects
 
 };
-
-#endif
