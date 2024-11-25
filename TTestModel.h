@@ -7,12 +7,6 @@
 #include <fstream>
 #include <iostream>
 
-
-#ifndef Test_TTMTestModel
-#define Test_TTMTestModel
-
-using namespace std;
-
 class TTMTestModel:public TObject {
 
  public:

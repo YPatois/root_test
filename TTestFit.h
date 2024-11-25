@@ -4,15 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-#ifndef Test_TTMTestModel
 #include <TTestModel.h>
-#endif
-
-#ifndef Test_TTMTestFit
-#define Test_TTMTestFit
-
-using namespace std;
-
 
 class TTMTestFit:public TObject {
 
