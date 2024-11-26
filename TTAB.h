@@ -8,19 +8,19 @@
 #include <TTestModel.h>
 #endif
 
-#ifndef Test_TTMTestFit
-#define Test_TTMTestFit
+#ifndef Test_TTMAB
+#define Test_TTMAB
 
 
-class TTMTestFit:public TObject {
+class TTMAB:public TObject {
 
    public:
 
-  TTMTestFit();  
+  TTMAB();  
    
-  ~TTMTestFit();
+  ~TTMAB();
 
-  ClassDef(TTMTestFit,1) // Base class for Test fit objects
+  ClassDef(TTMAB,1) // Base class for Test fit objects
 
 };
 

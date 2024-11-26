@@ -1,16 +1,16 @@
-#include <TTestFit.h>
+#include <TTAB.h>
 #include <cstdio>
 
-ClassImp(TTMTestFit)
+ClassImp(TTMAB)
 
 //__________________________________________________________________________
-TTMTestFit::TTMTestFit()
+TTMAB::TTMAB()
 {
    
 }
 
 //__________________________________________________________________________
-TTMTestFit::~TTMTestFit()
+TTMAB::~TTMAB()
 {
   
 }

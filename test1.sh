@@ -12,7 +12,7 @@ cmake --install build
 
 root test.C -b -q
 
-#exit 0
+exit 0
 
 DOTH=`ls TT*.h`
 rm -f TT*.h
