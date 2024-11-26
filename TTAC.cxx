@@ -1,9 +1,9 @@
-#include <TTestModel.h>
+#include <TTAC.h>
 
-ClassImp(TTMTestModel)
+ClassImp(TTMAC)
 
 //__________________________________________________________________________
-TTMTestModel::~TTMTestModel()
+TTMAC::~TTMAC()
 {
   
 }

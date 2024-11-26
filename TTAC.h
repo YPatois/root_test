@@ -8,21 +8,21 @@
 #include <iostream>
 
 
-#ifndef Test_TTMTestModel
-#define Test_TTMTestModel
+#ifndef Test_TTMAC
+#define Test_TTMAC
 
-class TTMTestModel:public TObject {
+class TTMAC:public TObject {
 
  public:
 
-   TTMTestModel() 
+   TTMAC() 
    {
       ;
    }  
    
-   ~TTMTestModel();
+   ~TTMAC();
    
-   ClassDef(TTMTestModel,1) // Base class for Test model objects
+   ClassDef(TTMAC,1) // Base class for Test model objects
 
 };
 #endif

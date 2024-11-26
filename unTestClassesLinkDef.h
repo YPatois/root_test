@@ -4,6 +4,6 @@
 #pragma link off all classes;
 #pragma link off all functions;
 
-#pragma link C++ class TTMTestModel+;
+#pragma link C++ class TTMAC+;
 #pragma link C++ class TTMAB+;
 #endif

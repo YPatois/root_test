@@ -4,8 +4,8 @@
 #include <fstream>
 #include <iostream>
 
-#ifndef Test_TTMTestModel
-#include <TTestModel.h>
+#ifndef Test_TTMAC
+#include <TTAC.h>
 #endif
 
 #ifndef Test_TTMAB
