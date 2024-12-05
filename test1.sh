@@ -10,13 +10,13 @@ cmake --build build
 cmake --install build
 
 
-root test.C -b -q
+root test1.C -b -q
 
 #exit 0
 
 DOTH=`ls TT*.h`
 rm -f TT*.h
 
-root test.C -b -q
+root test1.C -b -q
 
 git restore $DOTH
