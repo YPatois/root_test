@@ -4,7 +4,7 @@ project(unTest LANGUAGES CXX)
 
 # Finding the ROOT package
 ## [find_package]
-find_package(ROOT 6.16 CONFIG REQUIRED)
+find_package(ROOT CONFIG REQUIRED COMPONENTS MathMore)
 ## [find_package]
 
 include(GNUInstallDirs)
