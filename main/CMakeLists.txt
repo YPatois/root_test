@@ -1,13 +1,16 @@
+FILE(GLOB SRCFILES *.cxx)
+FILE(GLOB HFILES TT*.h)
+
 ROOT_STANDARD_LIBRARY_PACKAGE(
         unTest
     HEADERS
-        TTAB.h TTAC.h
+        ${HFILES}
     SOURCES
-        TTAB.cxx TTAC.cxx
+        ${SRCFILES}
     DEPENDENCIES
         ${ROOT_LIBRARIES})
 
-set_target_properties(unTest PROPERTIES PUBLIC_HEADER "TTAB.h;TTAC.h")
+set_target_properties(unTest PROPERTIES PUBLIC_HEADER "${HFILES}")
 
 install(TARGETS unTest
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
