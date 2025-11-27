@@ -16,6 +16,7 @@ root test1.C -b -q
 
 DOTH=`ls TT*.h`
 rm -f TT*.h
+rm -rf build
 
 root test1.C -b -q
 
