@@ -16,4 +16,9 @@ add_executable(RootLessSimpleExample LessSimpleExample.cxx)
 target_link_libraries(RootLessSimpleExample PUBLIC ROOT::Physics)
 ## [add_and_link]
 
+root_generate_dictionary(G__unTestDict TTAB.h TTAC.h LINKDEF unTestClassesLinkDef.h MODULE unTest)
+add_library(unTest SHARED TTAB.cxx TTAC.cxx TTAB.h TTAC.h G__unTestDict.cxx)
+target_include_directories(unTest PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+target_link_libraries(unTest PUBLIC ROOT::Core)
+
 install(TARGETS RootLessSimpleExample)
