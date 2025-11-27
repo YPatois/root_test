@@ -14,10 +14,8 @@ cmake --install build
 root test1.C -b -q
 #exit 0
 
-DOTH=`ls TT*.h`
-rm -f TT*.h
-rm -rf build
+rm -rf build main
 
 root test1.C -b -q
 
-git restore $DOTH
+git restore main
