@@ -9,8 +9,8 @@ cmake -B build -DCMAKE_INSTALL_PREFIX=`pwd`/local
 cmake --build build
 cmake --install build
 
-
-root test1.C -b -q
+#exit 0
+#strace -ff -o /tmp/toto root test1.C -b -q
 
 #exit 0
 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15...4.1)
 
-project(RootLessSimpleExample LANGUAGES CXX)
+project(unTest LANGUAGES CXX)
 
 # Finding the ROOT package
 ## [find_package]
@@ -8,17 +8,17 @@ find_package(ROOT 6.16 CONFIG REQUIRED)
 ## [find_package]
 
 include(GNUInstallDirs)
-set(CMAKE_INSTALL_LIBDIR ${CMAKE_INSTALL_LIBDIR}/RootLessSimpleExample)
+set(CMAKE_INSTALL_LIBDIR ${CMAKE_INSTALL_LIBDIR}/unTest)
+set(CMAKE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/unTest)
 
-# Adding an executable program and linking to needed ROOT libraries
-## [add_and_link]
-add_executable(RootLessSimpleExample LessSimpleExample.cxx)
-target_link_libraries(RootLessSimpleExample PUBLIC ROOT::Physics)
-## [add_and_link]
+#FILE(GLOB HFILES TT*.h)
 
 root_generate_dictionary(G__unTestDict TTAB.h TTAC.h LINKDEF unTestClassesLinkDef.h MODULE unTest)
-add_library(unTest SHARED TTAB.cxx TTAC.cxx TTAB.h TTAC.h G__unTestDict.cxx)
+add_library(unTest SHARED TTAB.cxx TTAC.cxx G__unTestDict.cxx)
 target_include_directories(unTest PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+set_target_properties(unTest PROPERTIES PUBLIC_HEADER "TTAB.h;TTAC.h")
 target_link_libraries(unTest PUBLIC ROOT::Core)
 
-install(TARGETS RootLessSimpleExample)
+install(TARGETS unTest
+    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(FILES ${CMAKE_BINARY_DIR}/libunTest_rdict.pcm  ${CMAKE_BINARY_DIR}/libunTest.rootmap DESTINATION ${CMAKE_INSTALL_LIBDIR})
