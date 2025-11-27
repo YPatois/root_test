@@ -11,7 +11,7 @@ cmake --install build
 
 #exit 0
 #strace -ff -o /tmp/toto root test1.C -b -q
-
+root test1.C -b -q
 #exit 0
 
 DOTH=`ls TT*.h`
