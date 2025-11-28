@@ -2,9 +2,10 @@
 R__ADD_INCLUDE_PATH(local/include/unTest)
 R__ADD_LIBRARY_PATH(local/lib64/unTest)
 R__ADD_LIBRARY_PATH(local/lib/unTest)
-R__LOAD_LIBRARY(unTest.so)
+R__LOAD_LIBRARY(unTest)
 
 void test1()
 {
+   TTMAC mac=TTMAC();
    std::cout << " OK " << std::endl;
 }

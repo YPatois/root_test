@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.15...4.1)
 
 project(unTest LANGUAGES CXX)
 
+option(USE_GLOB "Use GLOB to find header and source files" OFF)
+
 # Finding the ROOT package
 #---ROOT libraries/modules needed by our classes
 set(rootLibsToLink MathCore)
